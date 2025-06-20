@@ -742,7 +742,6 @@ async def del_plist(client, CallbackQuery, _):
 
 
 @app.on_callback_query(filters.regex("recover_playlist") & ~BANNED_USERS)
-@languageCB
 async def add_playlist(client, CallbackQuery, _):
     from ZeebMusic import YouTube
 
@@ -914,7 +913,6 @@ async def add_playlist(client, CallbackQuery, _):
 
 
 @app.on_callback_query(filters.regex("del_playlist") & ~BANNED_USERS)
-@languageCB
 async def del_plist(client, CallbackQuery, _):
     pass
 
@@ -960,7 +958,6 @@ async def del_plist(client, CallbackQuery, _):
 
 
 @app.on_callback_query(filters.regex("delete_whole_playlist") & ~BANNED_USERS)
-@languageCB
 async def del_whole_playlist(client, CallbackQuery, _):
     pass
 
@@ -975,7 +972,6 @@ async def del_whole_playlist(client, CallbackQuery, _):
 
 @app.on_callback_query(filters.regex("get_cplaylist_playmode") & ~BANNED_USERS)
 @app.on_callback_query(filters.regex("get_playlist_playmode") & ~BANNED_USERS)
-@languageCB
 async def get_playlist_playmode_(client, CallbackQuery, _):
     try:
         await CallbackQuery.answer()
@@ -994,7 +990,6 @@ async def get_playlist_playmode_(client, CallbackQuery, _):
 
 
 @app.on_callback_query(filters.regex("delete_warning") & ~BANNED_USERS)
-@languageCB
 async def delete_warning_message(client, CallbackQuery, _):
     pass
 
@@ -1022,7 +1017,6 @@ async def home_play_(client, CallbackQuery, _):
 
 
 @app.on_callback_query(filters.regex("del_back_playlist") & ~BANNED_USERS)
-@languageCB
 async def del_back_playlist(client, CallbackQuery, _):
     pass
 
