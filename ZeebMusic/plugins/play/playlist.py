@@ -26,7 +26,6 @@ from ZeebMusic.utils.database import (
     save_playlist,
 )
 from ZeebMusic.utils.decorators.language import language, languageCB
-from ZeebMusic.utils.inline.playlist import (
     botplaylist_markup,
     get_cplaylist_markup,
     get_playlist_markup,
