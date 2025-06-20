@@ -2,7 +2,6 @@ from pyrogram import filters
 from pyrogram.types import Message
 from config import LOG_GROUP_ID
 from ZeebMusic import app
-from ZeebMusic.core.call import Ryn
 
 
 @app.on_message(filters.video_chat_started, group=20)
