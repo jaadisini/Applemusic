@@ -7,8 +7,7 @@ from datetime import datetime, timedelta
 from pyrogram import Client
 from pyrogram.types import InlineKeyboardMarkup
 from ntgcalls import StreamType, TelegramServerError
-from pytgcalls import PyTgCalls, filters
-from pytgcalls.exceptions 
+from pytgcalls import PyTgCalls, filters 
     AlreadyJoinedError,
     NoActiveGroupCall,
 
