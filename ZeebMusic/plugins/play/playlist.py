@@ -70,7 +70,6 @@ async def get_keyboard(_, user_id):
 @app.on_message(
     filters.command(["deleteplaylist", "delplaylist"]) & filters.group & ~BANNED_USERS
 )
-@language
 async def del_group_message(client, message: Message, _):
     upl = InlineKeyboardMarkup(
         [
@@ -112,7 +111,6 @@ async def get_keyboard(_, user_id):
 @app.on_message(
     filters.command(["deleteplaylist", "delplaylist"]) & filters.private & ~BANNED_USERS
 )
-@language
 async def del_plist_msg(client, message: Message, _):
     _playlist = await get_playlist_names(message.from_user.id)
     if _playlist:
@@ -124,7 +122,6 @@ async def del_plist_msg(client, message: Message, _):
 
 
 @app.on_callback_query(filters.regex("play_playlist") & ~BANNED_USERS)
-@languageCB
 async def play_playlist(client, CallbackQuery, _):
     userbot = await get_assistant(CallbackQuery.message.chat.id)
     try:
@@ -260,7 +257,6 @@ async def play_playlist(client, CallbackQuery, _):
 @app.on_message(
     filters.command(["playplaylist", "vplayplaylist"]) & ~BANNED_USERS & filters.group
 )
-@languageCB
 async def play_playlist_command(client, message, _):
     msg = await message.reply_text("ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ....")
     try:
@@ -388,7 +384,6 @@ async def play_playlist_command(client, message, _):
 
 
 @app.on_callback_query(filters.regex("play_cplaylist") & ~BANNED_USERS)
-@languageCB
 async def play_playlist(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
     mode = callback_data.split(None, 1)[1]
@@ -436,7 +431,6 @@ async def play_playlist(client, CallbackQuery, _):
 @app.on_message(
     filters.command(["playgplaylist", "vplaygplaylist"]) & ~BANNED_USERS & filters.group
 )
-@languageCB
 async def play_playlist_command(client, message, _):
     mode = message.command[0][0]
     user_id = message.from_user.id
@@ -486,7 +480,6 @@ async def play_playlist_command(client, message, _):
 
 
 @app.on_message(filters.command(["addplaylist"]) & ~BANNED_USERS)
-@language
 async def add_playlist(client, message: Message, _):
     if len(message.command) < 2:
         return await message.reply_text(
@@ -717,8 +710,7 @@ async def add_playlist(client, message: Message, _):
             pass
 
 
-@app.on_callback_query(filters.regex("remove_playlist") & ~BANNED_USERS)
-@languageCB
+@app.on_callback_query(filters.regex("remove_playlist") & ~BANNED_USERS
 async def del_plist(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
     videoid = callback_data.split(None, 1)[1]
@@ -797,7 +789,6 @@ async def add_playlist(client, CallbackQuery, _):
 
 
 @app.on_callback_query(filters.regex("remove_playlist") & ~BANNED_USERS)
-@languageCB
 async def del_plist(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
     videoid = callback_data.split(None, 1)[1]
@@ -820,7 +811,6 @@ async def del_plist(client, CallbackQuery, _):
 
 
 @app.on_callback_query(filters.regex("add_playlist") & ~BANNED_USERS)
-@languageCB
 async def add_playlist(client, CallbackQuery, _):
     try:
         from ZeebMusic import YouTube
@@ -871,7 +861,6 @@ async def add_playlist(client, CallbackQuery, _):
 
 
 @app.on_callback_query(filters.regex("group_addplaylist") & ~BANNED_USERS)
-@languageCB
 async def add_playlist(client, CallbackQuery, _):
     try:
         from ZeebMusic import YouTube
