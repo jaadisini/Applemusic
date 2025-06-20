@@ -7,9 +7,6 @@ from datetime import datetime, timedelta
 from pyrogram import Client
 from pyrogram.types import InlineKeyboardMarkup
 from ntgcalls import StreamType, TelegramServerError
-    AlreadyJoinedError,
-    NoActiveGroupCall,
-
 from pytgcalls.types import Update, MediaStream, AudioQuality, VideoQuality, StreamAudioEnded, ChatUpdate
 from ZeebMusic.misc import db
 from ZeebMusic import LOGGER, YouTube, app
