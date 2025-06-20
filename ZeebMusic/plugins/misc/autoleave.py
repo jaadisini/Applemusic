@@ -5,7 +5,6 @@ from pyrogram.enums import ChatType
 
 import config
 from ZeebMusic import app
-from ZeebMusic.core.call import Ryn, autoend
 from ZeebMusic.utils.database import get_client, is_active_chat, is_autoend
 
 
