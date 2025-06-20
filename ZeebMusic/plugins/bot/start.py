@@ -13,7 +13,6 @@ from config.config import OWNER_ID
 from strings import get_string
 from ZeebMusic import Telegram, YouTube, app
 from ZeebMusic.misc import SUDOERS, _boot_
-from ZeebMusic.plugins.play.playlist import del_plist_msg
 from ZeebMusic.plugins.sudo.sudoers import sudoers_list
 from ZeebMusic.utils.database import (
     add_served_chat,
@@ -321,7 +320,7 @@ __HELP__ = """<blockquote><b>
 
 /stats - Gᴇᴛ Tᴏᴘ 𝟷𝟶 Tʀᴀᴄᴋs Gʟᴏʙᴀʟ Sᴛᴀᴛs, Tᴏᴘ 𝟷𝟶 Usᴇʀs ᴏғ ʙᴏᴛ, Tᴏᴘ 𝟷𝟶 Cʜᴀᴛs ᴏɴ ʙᴏᴛ, Tᴏᴘ 𝟷𝟶 Pʟᴀʏᴇᴅ ɪɴ ᴀ ᴄʜᴀᴛ ᴇᴛᴄ ᴇᴛᴄ.
 
-/sudolist - Cʜᴇᴄᴋ Sᴜᴅᴏ Usᴇʀs ᴏғ Yᴜᴋᴋɪ Mᴜsɪᴄ Bᴏᴛ
+/sudolist - Cʜᴇᴄᴋ Sᴜᴅᴏ Usᴇʀs ᴏғ pensi Mᴜsɪᴄ Bᴏᴛ
 
 /lyrics [Mᴜsɪᴄ Nᴀᴍᴇ] - Sᴇᴀʀᴄʜᴇs Lʏʀɪᴄs ғᴏʀ ᴛʜᴇ ᴘᴀʀᴛɪᴄᴜʟᴀʀ Mᴜsɪᴄ ᴏɴ ᴡᴇʙ.
 
