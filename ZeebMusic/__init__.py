@@ -1,4 +1,3 @@
-from SafeoneAPI import SafeoneAPI
 from ZeebMusic.core.bot import RynBot
 from ZeebMusic.core.dir import dirr
 from ZeebMusic.core.git import git
