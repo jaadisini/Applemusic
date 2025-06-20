@@ -33,7 +33,6 @@ from ZeebMusic.utils.inline.playlist import (
     warning_markup,
 )
 from ZeebMusic.utils.pastebin import Rynbin
-from ZeebMusic.utils.stream.stream import stream
 
 
 @app.on_message(filters.command(["playlist"]) & ~BANNED_USERS)
