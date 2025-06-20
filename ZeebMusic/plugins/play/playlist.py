@@ -12,11 +12,6 @@ from youtube_search import YoutubeSearch
 
 from config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
 from ZeebMusic import Carbon, app
-    delete_playlist,
-    get_assistant,
-    get_playlist,
-    get_playlist_names,
-    save_playlist,
 
 
 
