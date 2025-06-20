@@ -69,7 +69,6 @@ async def get_keyboard(_, user_id):
 
 @app.on_message(
     filters.command["deleteplaylist", "delplaylist"]) & filters.group & ~BANNED_USERS
-)
 async def del_group_message(client, message: Message, _):
     upl = InlineKeyboardMarkup(
         [
