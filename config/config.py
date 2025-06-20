@@ -12,8 +12,8 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", "29861643"))
-API_HASH = getenv("API_HASH", "7277438424:AAFXAc88zPSQhsevBUh1IvsMdm4bUeNz_Gc")
+API_ID = int(getenv("API_ID", "22253379"))
+API_HASH = getenv("API_HASH", "3660b1aa39b0573caefc691d60a3dd53")
 
 
 ## Get it from @Botfather in Telegram.
@@ -70,7 +70,7 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002084395631"))
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "940232666").split())
+    map(int, getenv("OWNER_ID", "8107432436").split())
 )  # Input type must be interger
 
 
@@ -95,10 +95,10 @@ GIT_TOKEN = getenv(
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/SpotifyStream_Id"
+    "SUPPORT_CHANNEL", "https://t.me/kaizenxpensicodex"
 )  # Example:- https://t.me/TheTeamVivek
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/TempatDemus_Id"
+    "SUPPORT_GROUP", "https://t.me/kaijensupport"
 )  # Example:- https://t.me/TheTeamVk
 
 
@@ -165,7 +165,7 @@ STRING5 = getenv("STRING_SESSION5", None)
 BANNED_USERS = filters.user()
 YTDOWNLOADER = 1
 LOG = 2
-LOG_FILE_NAME = "Rynlogs.txt"
+LOG_FILE_NAME = "yameteh.txt"
 adminlist = {}
 lyrical = {}
 chatstats = {}
@@ -179,14 +179,14 @@ autoclean = []
 PHOTO = list(
     filter(
         None,
-        getenv("PHOTO_LINKS", "https://mallucampaign.in/images/img_1718787407.jpg").split(),
+        getenv("PHOTO_LINKS", "https://files.catbox.moe/nu2928.jpg").split(),
     )
 )
 
 
 START_IMG_URL = getenv(
     "START_IMG_URL",
-    "https://mallucampaign.in/images/img_1718787407.jpg",
+    "https://files.catbox.moe/nu2928.jpg",
 )
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
