@@ -67,8 +67,6 @@ async def get_keyboard(_, user_id):
     return keyboard, count
 
 
-@app.on_message(
-    filters.command["deleteplaylist", "delplaylist"]) & filters.group & ~BANNED_USERS
 async def del_group_message(client, message: Message, _):
     upl = InlineKeyboardMarkup(
         [
@@ -1040,7 +1038,6 @@ async def del_back_playlist(client, CallbackQuery, _):
 __MODULE__ = "Playlist"
 __HELP__ = """<blockquote><b><u>❀ Pʟᴀʏʟɪsᴛ Fᴇᴀᴛᴜʀᴇ Fᴏʀ ʏᴏᴜ:</u>
 /playlist  - Cʜᴇᴄᴋ Yᴏᴜʀ Sᴀᴠᴇᴅ Pʟᴀʏʟɪsᴛ Oɴ Sᴇʀᴠᴇʀs.
-/delplaylist - Dᴇʟᴇᴛᴇ ᴀɴʏ sᴀᴠᴇᴅ ᴍᴜsɪᴄ ɪɴ ʏᴏᴜʀ ᴘʟᴀʏʟɪsᴛ
 /play  - Sᴛᴀʀᴛ ᴘʟᴀʏɪɴɢ Yᴏᴜʀ Sᴀᴠᴇᴅ Pʟᴀʏʟɪsᴛ ғʀᴏᴍ Sᴇʀᴠᴇʀs.
 /playplaylist - Sᴛᴀʀᴛ ᴅɪʀᴇᴄᴛʟʏ ᴘʟᴀʏɪɴɢ Yᴏᴜʀ Sᴀᴠᴇᴅ Pʟᴀʏʟɪsᴛ ғʀᴏᴍ Sᴇʀᴠᴇʀs [ᴏɴʟʏ ᴀᴜᴅɪᴏ ɴᴏ ᴠɪᴅᴇᴏ]
 
