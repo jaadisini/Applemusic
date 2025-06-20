@@ -7,7 +7,6 @@ import requests
 from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.enums import ChatMemberStatus
-from pyrogram.errors import (
     ChatAdminRequired,
     InviteRequestSent,
     UserAlreadyParticipant,
@@ -18,7 +17,6 @@ from youtube_search import YoutubeSearch
 
 from config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
 from ZeebMusic import Carbon, app
-from ZeebMusic.utils.database import (
     delete_playlist,
     get_assistant,
     get_playlist,
