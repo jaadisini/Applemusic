@@ -16,7 +16,6 @@ from ZeebMusic import Carbon, app
 
 
 @app.on_message(filters.command(["playlist"]) & ~BANNED_USERS)
-@language
 async def check_playlist(client, message: Message, _):
     _playlist = await get_playlist_names(message.from_user.id)
     if _playlist:
