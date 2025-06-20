@@ -6,7 +6,6 @@ from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from ZeebMusic import Carbon, YouTube, app
-from ZeebMusic.core.call import Ryn
 from ZeebMusic.misc import db
 from ZeebMusic.utils.database import (
     add_active_video_chat,
