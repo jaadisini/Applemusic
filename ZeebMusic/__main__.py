@@ -4,7 +4,6 @@ from pyrogram import idle
 import config
 from config import BANNED_USERS
 from ZeebMusic import HELPABLE, LOGGER, app, userbot
-from ZeebMusic.core.call import Ryn
 from ZeebMusic.plugins import ALL_MODULES
 from ZeebMusic.utils.database import get_banned_users, get_gbanned
 
