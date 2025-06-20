@@ -13,7 +13,6 @@ from config import (
     SUPPORT_GROUP,
 )
 from ZeebMusic import YouTube, app
-from ZeebMusic.core.call import Ryn
 from ZeebMusic.misc import SUDOERS, db
 from ZeebMusic.utils.database import (
     is_active_chat,
