@@ -12,8 +12,8 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", "22253379"))
-API_HASH = getenv("API_HASH", "3660b1aa39b0573caefc691d60a3dd53")
+API_ID = int(getenv("API_ID", "24773720"))
+API_HASH = getenv("API_HASH", "b8158aa3d0e6deabfb14c92ccf95ff8d")
 
 
 ## Get it from @Botfather in Telegram.
@@ -65,12 +65,12 @@ SONG_DOWNLOAD_DURATION = int(
 
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002869486987"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002644388541"))
 
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "8107432436").split())
+    map(int, getenv("OWNER_ID", "7688387817").split())
 )  # Input type must be interger
 
 
@@ -95,10 +95,10 @@ GIT_TOKEN = getenv(
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/kaizenxpensicodex"
+    "SUPPORT_CHANNEL", "https://t.me/ResahBerkata"
 )  # Example:- https://t.me/TheTeamVivek
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/kaijensupport"
+    "SUPPORT_GROUP", "https://t.me/DZarea"
 )  # Example:- https://t.me/TheTeamVk
 
 
